@@ -1,16 +1,16 @@
 # Roadmap dan task board Sprint 0–5
 
-Baseline [PRD](PRD.md). Semua Sprint 1–5 berstatus **belum dimulai**, bukan fitur yang sudah tersedia. Urutan mengikuti PRD; durasi kalender tidak diada-adakan sebelum kapasitas disepakati. Persetujuan pengguna diperlukan untuk berpindah dari Sprint 0. Pembuatan akun/resource membutuhkan keputusan owner dan biaya tersendiri.
+Baseline [PRD](PRD.md). Sprint 1 telah diotorisasi dan diimplementasikan lokal; integrasi/penerimaan backend penuh masih terbuka. Sprint 2–5 **belum dimulai**. Lihat [laporan Sprint 1](sprint-1-report.md). Urutan mengikuti PRD; durasi kalender tidak diada-adakan sebelum kapasitas disepakati. Persetujuan pengguna diperlukan untuk berpindah dari Sprint 0. Pembuatan akun/resource membutuhkan keputusan owner dan biaya tersendiri.
 
-## Sprint 0 — audit dan rencana (sprint saat ini)
+## Sprint 0 — audit dan rencana (selesai)
 
 - [x] Baca seluruh PRD dan simpan salinan identik.
 - [x] Audit kondisi awal repository dan akses baca GitHub.
 - [x] Petakan kebutuhan, batas MVP dan keputusan terbuka.
 - [x] Susun arsitektur, schema konseptual, state machine dan kontrol keamanan.
 - [x] Susun backlog Sprint 1–5 dan checklist 15 acceptance criteria.
-- [ ] Persetujuan pemilik atas hasil Sprint 0 dan mulai Sprint 1.
-- [ ] Kesepakatan owner layanan dan pembiayaan sebelum provisioning apa pun.
+- [x] Persetujuan pemilik atas hasil Sprint 0 dan mulai Sprint 1.
+- [x] Klarifikasi terakhir: akun teknis Vini; target existing Supabase PROYEK MASHURA dan Vercel mashura.vercel.app. Plugin/resource ID belum terverifikasi; provisioning belum dilakukan.
 
 GitHub `PebisnisDigital/mashura` adalah target yang sudah diberikan pengguna, bukan project baru. Owner legal source code dan billing tidak dianggap selesai hanya karena repo tersedia. Dokumen ini merupakan serah-terima perencanaan; keputusan operasional belum disetujui tetap tercatat pada [register keputusan](decisions-and-operations.md).
 
@@ -18,13 +18,15 @@ GitHub `PebisnisDigital/mashura` adalah target yang sudah diberikan pengguna, bu
 
 **Prasyarat:** persetujuan Sprint 1; owner, akun target, akses dan biaya disepakati sebelum pembuatan resource. Tidak memakai BADAI.
 
-- [ ] S1-01 Scaffold Next.js App Router + strict TypeScript, pin Node/package manager, lockfile, lint/typecheck/unit/build dan CI.
+- [x] S1-01 Scaffold Next.js App Router + strict TypeScript, pin Node/package manager, lockfile, lint/typecheck/unit/build dan CI.
 - [ ] S1-02 Siapkan lingkungan MASHURA yang disetujui; Supabase Auth, Storage, migration awal, RLS, role bootstrap; Vercel preview terpisah production bila sudah diotorisasi.
-- [ ] S1-03 Shell admin HP lima tab + sidebar desktop; auth/capability server dan tes non-admin.
-- [ ] S1-04 Branding/settings, logo/favicon, banner/urutan, warna, kontak, FAQ/legal; invalidasi cache tampilan publik dasar.
-- [ ] S1-05 Kategori dan CRUD/duplikasi produk; slug, harga/histori, galeri, FAQ, durasi, status draft/publish/unpublish, unggulan.
-- [ ] S1-06 Authoring enam tipe produk: LMS bab/pelajaran/video sah, PDF, file/template, prompt, external link, bundle. Upload privat, preview, validasi publish; belum delivery pembeli penuh.
-- [ ] S1-07 Audit perubahan kritis dan kebijakan penggantian file aman.
+- [x] S1-03 Shell admin HP lima tab + sidebar desktop; auth/capability server dan tes non-admin.
+- [x] S1-04 Branding/settings, logo/favicon, banner/urutan, warna, kontak, FAQ/legal; invalidasi cache tampilan publik dasar.
+- [x] S1-05 Kategori dan CRUD/duplikasi produk; slug, harga/histori, galeri, FAQ, durasi, status draft/publish/unpublish, unggulan.
+- [x] S1-06 Authoring enam tipe produk: LMS bab/pelajaran/video sah, PDF, file/template, prompt, external link, bundle. Upload privat, preview, validasi publish; belum delivery pembeli penuh.
+- [x] S1-07 Audit perubahan kritis dan kebijakan penggantian file aman.
+
+**Status implementasi:** checkbox S1 di atas menandai kode tersedia, bukan penerimaan E2E selesai. S1-02 dan uji Auth/Storage/backend penuh belum tuntas; Sprint 1 belum selesai penuh.
 
 **Keluar:** AC01–03, AC13 bagian admin/storage awal, AC14 bagian katalog; admin dari HP menerbitkan satu produk lengkap, authoring satu LMS dan satu PDF; brand berubah tanpa deploy; non-admin dan anon gagal mutasi langsung. Lint/typecheck/unit/SQL-RLS/build lulus. Pengujian ini belum membuktikan pembayaran atau membership.
 

@@ -1,5 +1,7 @@
 # Arsitektur teknis yang diusulkan
 
+> Dokumen baseline Sprint 0. Status implementasi dan hasil validasi terkini: [laporan Sprint 1](sprint-1-report.md). Bagian yang menyebut belum ada kode/tes menggambarkan kondisi saat audit Sprint 0.
+
 Status: rancangan Sprint 0, belum diimplementasikan. Acuan: [PRD §7](PRD.md), [database](database.md), [keamanan](security.md). Pilihan teknis di bawah dapat disesuaikan saat Sprint 1 tanpa memperluas fitur.
 
 ## Komponen dan batas kepercayaan

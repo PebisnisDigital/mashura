@@ -1,5 +1,7 @@
 # Strategi validasi dan checklist pengujian
 
+> Dokumen baseline Sprint 0. Status implementasi dan hasil validasi terkini: [laporan Sprint 1](sprint-1-report.md). Bagian yang menyebut belum ada kode/tes menggambarkan kondisi saat audit Sprint 0.
+
 Status Sprint 0: hanya pemeriksaan dokumen; **semua tes aplikasi di bawah belum dijalankan**. Belum ada runtime aplikasi, SQL migration atau resource remote. Checklist kosong berarti rencana, bukan lulus. Bukti saat implementasi harus mencatat command, commit, lingkungan, fixture, expected/actual, jumlah passed/failed/skipped dan artifact run saat ini.
 
 ## Pemetaan lengkap acceptance criteria PRD §11

@@ -1,5 +1,7 @@
 # Audit kebutuhan — Sprint 0
 
+> Dokumen baseline Sprint 0. Status implementasi dan hasil validasi terkini: [laporan Sprint 1](sprint-1-report.md). Bagian yang menyebut belum ada kode/tes menggambarkan kondisi saat audit Sprint 0.
+
 Tanggal: 24 Oktober 2026 (WIB). Baseline: [PRD v1.0](PRD.md), dibaca seluruh Bagian 1–16. Repo target yang diverifikasi: `PebisnisDigital/mashura`, commit awal `bcc6628f51898080ea14bf2392bff234bca10d07`, sama dengan remote `main` saat audit. Repo awal hanya memiliki README; belum ada implementasi, package manifest, lockfile, CI, migration, atau tes aplikasi.
 
 ## Batas pengerjaan

@@ -1,5 +1,7 @@
 # Rancangan keamanan dan otorisasi
 
+> Dokumen baseline Sprint 0. Status implementasi dan hasil validasi terkini: [laporan Sprint 1](sprint-1-report.md). Bagian yang menyebut belum ada kode/tes menggambarkan kondisi saat audit Sprint 0.
+
 Status: kontrol yang harus diimplementasikan dan diuji, belum klaim keamanan runtime. Acuan PRD §3,7,11.13. Default deny; setiap jalur Data API, server handler, RPC dan Storage harus memiliki otorisasi sendiri.
 
 ## Matriks akses

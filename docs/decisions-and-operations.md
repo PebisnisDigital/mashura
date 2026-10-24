@@ -1,5 +1,7 @@
 # Register keputusan dan rencana operasional
 
+Pembaruan Sprint 1: pengguna telah menyetujui Sprint 1, lalu mengklarifikasi semua akun teknis milik Vini. Target existing Supabase PROYEK MASHURA dan Vercel mashura.vercel.app; tool plugin/resource ID/schema belum terverifikasi; tidak ada provisioning. Lihat [laporan Sprint 1](sprint-1-report.md).
+
 Tanggal: 24 Oktober 2026 (WIB). Ini rencana dan daftar prasyarat; bukan bukti provisioning atau persetujuan biaya. PRD v1.0 tetap baseline. Pemilik bisnis yang disebut PRD: Firdi; mitra teknis/komisi: Teh Vini. Penugasan itu tidak otomatis memberikan akses akun atau hak menandatangani kontrak.
 
 ## Keputusan yang sudah terkunci oleh PRD / permintaan pengguna
@@ -15,7 +17,7 @@ Tanggal: 24 Oktober 2026 (WIB). Ini rencana dan daftar prasyarat; bukan bukti pr
 | ID | Keputusan diperlukan | Rekomendasi / kondisi sekarang, belum disetujui | Penanggung jawab keputusan | Batas waktu |
 |---|---|---|---|---|
 | D01 | Owner legal source code, GitHub access/offboarding | Repo target tersedia; hak legal dan akses Vini harus ditulis | Firdi + Vini | Sebelum perluasan akses/resource remote |
-| D02 | Owner/billing Supabase, Vercel, gateway, email, domain; biaya development/production | Firdi owner bisnis/billing, Vini collaborator minimum; biaya dan akun belum dikunci | Firdi + Vini | Sebelum provisioning/pembelian apa pun |
+| D02 | Owner/billing Supabase, Vercel, gateway, email, domain; biaya development/production | Klarifikasi terbaru: semua akun teknis Vini; Supabase PROYEK MASHURA, Vercel mashura.vercel.app. Rincian biaya dan ID/schema/akses target belum diverifikasi | Firdi + Vini | Sebelum provisioning/pembelian apa pun |
 | D03 | Gateway dan metode aktual, event/expiry, settlement, refund API | Pilih provider Indonesia yang mendukung QRIS/metode disepakati, signature dan sandbox; jangan mengarang provider | Firdi dengan evaluasi Vini | Sebelum Sprint 3 |
 | D04 | Refund, revocation, sengketa, partial, manual paid, kupon 100%, pajak/fee dan komisi | Refund mengoreksi ledger; detail dan legal text belum ada | Firdi + Vini | Kebijakan checkout sebelum Sprint 3; seluruh detail sebelum produksi |
 | D05 | Periode, jatuh tempo, bukti transfer dan kompensasi honor setelah payout | Sistem rentang bebas dan unpaid/paid; mingguan/bulanan belum dipilih | Firdi + Vini | Sebelum go-live |
@@ -24,9 +26,9 @@ Tanggal: 24 Oktober 2026 (WIB). Ini rencana dan daftar prasyarat; bukan bukti pr
 | D08 | Warna/logo final | Placeholder netral, editable; tanpa aset Shopee | Firdi | Sebelum pemasaran |
 | D09 | Mulai durasi dan aturan bundle | Usulan mulai saat paid; bundle duration berlaku semua item, child list frozen, tanpa nested bundle MVP | Firdi dengan Vini | Sebelum snapshot checkout Sprint 3 |
 | D10 | Kapasitas/file size, paket backup, retensi PII/log, RPO/RTO dan support incident | Ukur kebutuhan; batas numerik/anggaran harus dipilih dan diuji | Firdi + Vini | Sebelum produksi; upload cap sebelum Sprint 1 authoring |
-| D11 | Persetujuan hasil Sprint 0 → Sprint 1 | Menunggu pengguna; tidak otomatis dari status PRD | Pengguna/pemilik | Sebelum pekerjaan Sprint 1 |
+| D11 | Persetujuan hasil Sprint 0 → Sprint 1 | Disetujui pengguna 24 Oktober 2026 | Pengguna/pemilik | Sebelum pekerjaan Sprint 1 |
 
-Tidak ada keputusan di atas dijawab dengan asumsi telah disetujui. D03/D06 tidak menghalangi perencanaan atau katalog Sprint 1. D02 menghalangi pembuatan layanan. Tidak meminta credential dalam chat; nanti gunakan secret settings layanan yang tepat.
+D02 (akun teknis dan target existing) dan D11 dijawab eksplisit pengguna; keputusan lain tetap terbuka. D03/D06 tidak menghalangi perencanaan atau katalog Sprint 1. D02 menghalangi pembuatan layanan. Tidak meminta credential dalam chat; nanti gunakan secret settings layanan yang tepat.
 
 ## SOP yang harus diwujudkan saat implementasi
 
@@ -67,3 +69,7 @@ Sebelum live pilih jadwal/retensi DB, object storage dan RPO/RTO sesuai biaya. S
 ## Serah-terima
 
 Tinjau rancangan dan keputusan D01–D11. Setelah pengguna menyetujui Sprint 1, kerjakan hanya fondasi/admin katalog sesuai task board. Pembuatan resource tetap menunggu kepemilikan/akun/billing yang jelas. Tidak ada deployment atau langganan baru yang diotorisasi oleh dokumen ini.
+
+## Klarifikasi akun pengguna pada Sprint 1
+
+Instruksi terbaru mengesampingkan rekomendasi pemilik layanan di PRD/rencana Sprint 0: semua akun GitHub/Supabase/Vercel milik Vini. Supabase target berlabel PROYEK MASHURA dan Vercel target melayani https://mashura.vercel.app/. Ini target yang disebut pengguna, belum hasil verifikasi API. Jangan membuat project pengganti, memakai BADAI, atau mengubah target berdasarkan default CLI. Tools Supabase/Vercel belum callable dalam percakapan saat pemeriksaan; pengguna diminta menghubungkan plugin. Pembiayaan rinci/paket tetap memerlukan kesepakatan operasional, dan hak admin aplikasi Firdi/Vini mengikuti role PRD, tidak otomatis dari kepemilikan akun layanan.

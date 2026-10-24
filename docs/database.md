@@ -1,5 +1,7 @@
 # Rancangan database dan integritas transaksi
 
+> Dokumen baseline Sprint 0. Status implementasi dan hasil validasi terkini: [laporan Sprint 1](sprint-1-report.md). Bagian yang menyebut belum ada kode/tes menggambarkan kondisi saat audit Sprint 0.
+
 Status: spesifikasi Sprint 0, **bukan migration SQL dan belum dijalankan**. Semua entitas berada di Supabase MASHURA tersendiri. PostgreSQL UUID sebagai PK kecuali singleton; timestamp `timestamptz` UTC; tampilan WIB; uang `bigint` rupiah bulat (`currency = IDR`), bukan float. Enum/check constraint dan index final diterjemahkan ke migration versioned pada sprint terkait. RLS semua tabel Data API; tabel internal di schema non-exposed ditambah pembatasan privilege.
 
 ## Kamus data
